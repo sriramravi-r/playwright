@@ -20,7 +20,7 @@ test("second playwright test", async ({page})=>{
     await page.locator("input#username")
 });
 
-test.only("third playwright test",async ({page})=>{
+test("third playwright test",async ({page})=>{
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")
     await page.locator("#username").fill("rahulshetty")
     await page.locator("[id='password']").fill("learning")
